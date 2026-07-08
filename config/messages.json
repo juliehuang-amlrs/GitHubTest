@@ -1,0 +1,443 @@
+{
+  "hit_values": {
+    "name": "amigo supermarket",
+    "bic": "ABOLRTH0XX",
+    "country": "IR",
+    "town": "Tehran",
+    "street": "Ferdowsi Avenue",
+    "postcode": "1111111111"
+  },
+  "clean_values": {
+    "name": "Acme Corporation",
+    "bic": "CHASUS33XXX",
+    "country": "US",
+    "town": "New York",
+    "street": "383 Madison Avenue",
+    "postcode": "10179"
+  },
+  "messages": {
+    "pacs.008": {
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08",
+      "root_tag": "FIToFICstmrCdtTrf",
+      "structure": "customer_credit_transfer",
+      "screenable_fields": {
+        "parties": [
+          {
+            "id": "Dbtr",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "Dbtr/Nm",
+            "addr_parent": "Dbtr",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "Cdtr",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "Cdtr/Nm",
+            "addr_parent": "Cdtr",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "UltmtDbtr",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "UltmtDbtr/Nm",
+            "addr_parent": "UltmtDbtr",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "UltmtCdtr",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "UltmtCdtr/Nm",
+            "addr_parent": "UltmtCdtr",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "InstgAgt",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "InstgAgt/FinInstnId/Nm",
+            "addr_parent": "InstgAgt/FinInstnId",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "InstdAgt",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "InstdAgt/FinInstnId/Nm",
+            "addr_parent": "InstdAgt/FinInstnId",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "Undrlg_Dbtr",
+            "tag_path_prefix": "CdtTrfTxInf/UndrlygCstmrCdtTrf",
+            "name_path": "Dbtr/Nm",
+            "addr_parent": "Dbtr",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "Undrlg_Cdtr",
+            "tag_path_prefix": "CdtTrfTxInf/UndrlygCstmrCdtTrf",
+            "name_path": "Cdtr/Nm",
+            "addr_parent": "Cdtr",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          }
+        ],
+        "agents": [
+          {
+            "id": "InstgAgt",
+            "tag_path": "CdtTrfTxInf/InstgAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "InstdAgt",
+            "tag_path": "CdtTrfTxInf/InstdAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "DbtrAgt",
+            "tag_path": "CdtTrfTxInf/DbtrAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "CdtrAgt",
+            "tag_path": "CdtTrfTxInf/CdtrAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "IntrmyAgt1",
+            "tag_path": "CdtTrfTxInf/IntrmyAgt1/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          }
+        ]
+      }
+    },
+    "pacs.009": {
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:pacs.009.001.08",
+      "root_tag": "FICdtTrf",
+      "structure": "fi_credit_transfer",
+      "screenable_fields": {
+        "parties": [
+          {
+            "id": "Dbtr",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "Dbtr/FinInstnId/Nm",
+            "addr_parent": "Dbtr/FinInstnId",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "Cdtr",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "Cdtr/FinInstnId/Nm",
+            "addr_parent": "Cdtr/FinInstnId",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "InstgAgt",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "InstgAgt/FinInstnId/Nm",
+            "addr_parent": "InstgAgt/FinInstnId",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "InstdAgt",
+            "tag_path_prefix": "CdtTrfTxInf",
+            "name_path": "InstdAgt/FinInstnId/Nm",
+            "addr_parent": "InstdAgt/FinInstnId",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "Undrlg_Dbtr",
+            "tag_path_prefix": "CdtTrfTxInf/UndrlygCstmrCdtTrf",
+            "name_path": "Dbtr/Nm",
+            "addr_parent": "Dbtr",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "Undrlg_Cdtr",
+            "tag_path_prefix": "CdtTrfTxInf/UndrlygCstmrCdtTrf",
+            "name_path": "Cdtr/Nm",
+            "addr_parent": "Cdtr",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          }
+        ],
+        "agents": [
+          {
+            "id": "Dbtr_BIC",
+            "tag_path": "CdtTrfTxInf/Dbtr/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "Cdtr_BIC",
+            "tag_path": "CdtTrfTxInf/Cdtr/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "DbtrAgt",
+            "tag_path": "CdtTrfTxInf/DbtrAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "CdtrAgt",
+            "tag_path": "CdtTrfTxInf/CdtrAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "InstgAgt_BIC",
+            "tag_path": "CdtTrfTxInf/InstgAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "InstdAgt_BIC",
+            "tag_path": "CdtTrfTxInf/InstdAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "IntrmyAgt1",
+            "tag_path": "CdtTrfTxInf/IntrmyAgt1/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          }
+        ]
+      }
+    },
+    "camt.054": {
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:camt.054.001.08",
+      "root_tag": "BkToCstmrDbtCdtNtfctn",
+      "structure": "bank_notification",
+      "screenable_fields": {
+        "parties": [
+          {
+            "id": "Dbtr",
+            "tag_path_prefix": "Ntfctn/Ntry/NtryDtls/TxDtls/RltdPties",
+            "name_path": "Dbtr/Pty/Nm",
+            "addr_parent": "Dbtr/Pty",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "Cdtr",
+            "tag_path_prefix": "Ntfctn/Ntry/NtryDtls/TxDtls/RltdPties",
+            "name_path": "Cdtr/Pty/Nm",
+            "addr_parent": "Cdtr/Pty",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "UltmtDbtr",
+            "tag_path_prefix": "Ntfctn/Ntry/NtryDtls/TxDtls/RltdPties",
+            "name_path": "UltmtDbtr/Pty/Nm",
+            "addr_parent": "UltmtDbtr/Pty",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "UltmtCdtr",
+            "tag_path_prefix": "Ntfctn/Ntry/NtryDtls/TxDtls/RltdPties",
+            "name_path": "UltmtCdtr/Pty/Nm",
+            "addr_parent": "UltmtCdtr/Pty",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "AcctOwnr",
+            "tag_path_prefix": "Ntfctn/Acct",
+            "name_path": "Ownr/Nm",
+            "addr_parent": "Ownr",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          }
+        ],
+        "agents": [
+          {
+            "id": "DbtrAgt",
+            "tag_path": "Ntfctn/Ntry/NtryDtls/TxDtls/RltdAgts/DbtrAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "CdtrAgt",
+            "tag_path": "Ntfctn/Ntry/NtryDtls/TxDtls/RltdAgts/CdtrAgt/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "IntrmyAgt1",
+            "tag_path": "Ntfctn/Ntry/NtryDtls/TxDtls/RltdAgts/IntrmyAgt1/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "AcctSvcr",
+            "tag_path": "Ntfctn/Acct/Svcr/FinInstnId/BICFI",
+            "supports": [
+              "bic"
+            ]
+          }
+        ]
+      }
+    },
+    "MT300": {
+      "format": "mt",
+      "mt_type": "300",
+      "structure": "mt300",
+      "description": "Foreign Exchange Confirmation",
+      "screenable_fields": {
+        "parties": [
+          {
+            "id": "PartyA_82",
+            "tag_path_prefix": "Block4",
+            "name_path": ":82D: Party A",
+            "addr_parent": ":82D:",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          },
+          {
+            "id": "PartyB_87",
+            "tag_path_prefix": "Block4",
+            "name_path": ":87D: Party B",
+            "addr_parent": ":87D:",
+            "supports": [
+              "name",
+              "country",
+              "address"
+            ]
+          }
+        ],
+        "agents": [
+          {
+            "id": "PartyA_82A",
+            "tag_path": ":82A: Party A BIC",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "PartyB_87A",
+            "tag_path": ":87A: Party B BIC",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "SenderCorr_53A",
+            "tag_path": ":53A: Sender's Correspondent BIC",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "Intermediary_56A",
+            "tag_path": ":56A: Intermediary BIC",
+            "supports": [
+              "bic"
+            ]
+          },
+          {
+            "id": "AcctWithInst_57A",
+            "tag_path": ":57A: Account With Institution BIC",
+            "supports": [
+              "bic"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
